@@ -17,7 +17,7 @@ pipeline {
                             junit 'backend/target/surefire-reports/*.xml'
                             findbugs canComputeNew: false, defaultEncoding: '', excludePattern: '', healthy: '', includePattern: '', pattern: '**/spotbugsXml.xml', unHealthy: ''
                             checkstyle canComputeNew: false, defaultEncoding: '', healthy: '', pattern: '**/checkstyle-result.xml', unHealthy: ''
-                            jacoco()
+                           // jacoco()
                         }
                     }
                 }
