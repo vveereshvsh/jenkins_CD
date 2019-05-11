@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'RHEL7' }
+    agent { label 'slave1' }
     tools {
         maven 'maven'
   }
